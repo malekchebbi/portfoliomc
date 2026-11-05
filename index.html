@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malek Chebbi — Ingénieure IoT, IA & Robotique</title>
+  <meta name="description" content="Portfolio de Malek Chebbi, étudiante ingénieure en Génie Informatique Industrielle à Enet'Com Sfax. Projets en IoT, intelligence artificielle, robotique et développement web & mobile.">
+  <meta name="author" content="Malek Chebbi">
+  <meta name="theme-color" content="#05060f">
+  <meta property="og:title" content="Malek Chebbi — Ingénieure IoT, IA & Robotique">
+  <meta property="og:description" content="Des systèmes intelligents qui relient le monde physique au numérique : IoT, IA, robotique et développement.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EMC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="loading">
+
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-mark">MC</div>
+    <div class="loader-bar"><span></span></div>
+    <p>Initialisation du portfolio…</p>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ===== Décor de fond ===== -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="aurora-blob blob-1"></span>
+    <span class="aurora-blob blob-2"></span>
+    <span class="aurora-blob blob-3"></span>
+    <span class="aurora-blob blob-4"></span>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Malek Chebbi — retour en haut">
+        <span class="brand-mark">MC</span>
+        <span class="brand-text">Malek<span>Chebbi</span></span>
+        
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#education">Formation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Activer le thème clair" title="Changer de thème">
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+          <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Me contacter</a>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+          <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill hero-pill reveal">
+            <span class="pulse-dot"></span>
+            Ouverte aux opportunités · IoT · IA · Robotique
+          </div>
+
+          <h1 class="hero-title reveal" style="--d:.06s">
+            <span class="hero-hi">Bonjour, je suis</span>
+            Malek <span class="grad-text">Chebbi</span>
+          </h1>
+
+          <p class="hero-role reveal" style="--d:.12s" aria-label="Ingénieure en Génie Informatique Industrielle, spécialiste IoT et systèmes embarqués, passionnée d'IA et de robotique">
+            <span id="typedRole">Ingénieure en Génie Informatique Industrielle</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-desc reveal" style="--d:.18s">
+            Je conçois des systèmes intelligents qui relient le monde physique au numérique :
+            de la robotique aux objets connectés, en passant par l'intelligence artificielle.
+          </p>
+
+          <div class="hero-cta reveal" style="--d:.24s">
+            <a href="#projects" class="btn btn-primary magnetic">
+              Voir mes projets
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </a>
+            <a href="assets/docs/CV_Malek_Chebbi.pdf" download class="btn btn-ghost magnetic">
+              <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+              Télécharger mon CV
+            </a>
+          </div>
+
+          <div class="hero-socials reveal" style="--d:.3s">
+            <a href="mailto:malek.ch101@gmail.com" class="social-link" aria-label="Envoyer un email" title="Email">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+            </a>
+            <a href="tel:+21627728351" class="social-link" aria-label="Appeler" title="Téléphone">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/malek-chebbi-77b60237b/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Profil LinkedIn" title="LinkedIn">
+              <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+            </a>
+            <span class="social-line" aria-hidden="true"></span>
+            <span class="social-note">El Jem, Tunisie ·</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:.2s">
+          <div class="visual-stage" id="visualStage">
+
+            <span class="visual-glow" aria-hidden="true"></span>
+
+            <div class="float-badge fb-1" aria-hidden="true">
+              <svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg> Python
+            </div>
+            <div class="float-badge fb-2" aria-hidden="true">
+              <svg class="icon" aria-hidden="true"><use href="#i-bot"></use></svg> ROS2
+            </div>
+            <div class="float-badge fb-3" aria-hidden="true">
+              <svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg> ESP32
+            </div>
+            <div class="float-badge fb-4" aria-hidden="true">
+              <svg class="icon" aria-hidden="true"><use href="#i-brain"></use></svg> IA
+            </div>
+            
+
+            <div class="code-card tilt" id="codeCard">
+              <div class="code-top">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+                <span class="code-file">malek.py</span>
+                <span class="code-live"><span></span> live</span>
+              </div>
+              <pre class="code-body"><code><span class="tok-comment"># Ingénieure · IoT · IA · Robotique</span>
+<span class="tok-key">class</span> <span class="tok-class">Engineer</span>:
+    name <span class="tok-op">=</span> <span class="tok-str">"Malek Chebbi"</span>
+    focus <span class="tok-op">=</span> [<span class="tok-str">"IoT"</span>, <span class="tok-str">"IA"</span>, <span class="tok-str">"Robotique"</span>]
+
+    <span class="tok-key">def</span> <span class="tok-func">build</span>(self):
+        <span class="tok-key">return</span> <span class="tok-str">"des systèmes intelligents"</span>
+
+<span class="tok-comment"># Toujours en apprentissage ✦</span></code></pre>
+              <div class="code-status">
+                <span class="status-dot"></span>
+                <span>systems online</span>
+                <span class="code-branch">main</span>
+              </div>
+            </div>
+
+            <div class="visual-tag">
+              <svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg>
+              <span>Du capteur au cloud</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-stats reveal" style="--d:.36s">
+          <div class="stat">
+            <span class="stat-num" data-target="7">0</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">Stages en entreprise</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="12" data-suffix="+">0</span>
+            <span class="stat-label">Technologies maîtrisées</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Faire défiler vers la section À propos">
+        <span class="mouse"><span></span></span>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span>01 — À propos</span>
+          <h2>Une ingénieure qui relie <span class="grad-text">le physique au digital</span></h2>
+          <p>Double compétence en intelligence artificielle et IoT, avec une solide culture en robotique et systèmes embarqués.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass about-main reveal">
+            <div class="about-badge">
+              <svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg>
+              Mon approche
+            </div>
+            <p>
+              Étudiante en cycle d'ingénieur à <strong>Enet'Com Sfax</strong>, je me spécialise en
+              robotique et contrôle industriel. Mon parcours — licence en traitement et analyse
+              de données, puis mastère en IA &amp; IoT — m'a donné une double culture :
+              <strong>comprendre la donnée</strong> et <strong>la faire agir sur le monde physique</strong>.
+            </p>
+            <p>
+              J'aime concevoir des systèmes de bout en bout : du capteur  au tableau de bord,
+              du modèle CNN à l'application mobile. Curieuse, rigoureuse et à l'aise en équipe
+              pluridisciplinaire, je transforme des problématiques en solutions concrètes.
+            </p>
+
+            <div class="focus-row">
+              <span class="focus-chip"><svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg> IoT &amp; Embarqué</span>
+              <span class="focus-chip"><svg class="icon" aria-hidden="true"><use href="#i-brain"></use></svg> IA appliquée</span>
+              <span class="focus-chip"><svg class="icon" aria-hidden="true"><use href="#i-bot"></use></svg> Robotique</span>
+            </div>
+
+            <blockquote class="about-quote">
+              <svg class="icon quote-icon" aria-hidden="true"><use href="#i-quote"></use></svg>
+              « Construire des systèmes qui pensent, ressentent et agissent. »
+            </blockquote>
+          </article>
+
+          <div class="about-side">
+            <article class="glass mini-card reveal" style="--d:.06s">
+              <span class="mini-icon"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"></use></svg></span>
+              <div>
+                <h3>El Jem, Tunisie</h3>
+                <p>Mobile &amp; ouverte aux opportunités</p>
+              </div>
+            </article>
+
+            <article class="glass mini-card reveal" style="--d:.12s">
+              <span class="mini-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg></span>
+              <div>
+                <h3>Arabe · Français · Anglais</h3>
+                <p>Natif · B1 · B2</p>
+              </div>
+            </article>
+
+            
+
+            <article class="glass mini-card reveal" style="--d:.24s">
+              <span class="mini-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg></span>
+              <div>
+                <h3>Club Robotique</h3>
+                <p>ISSAT Mahdia · Hackathons &amp; projets</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span>02 — Projets</span>
+          <h2>Des idées devenues <span class="grad-text">des systèmes réels</span></h2>
+          <p>Robotique, objets connectés, IA et applications : une sélection de projets académiques et professionnels.</p>
+        </div>
+
+        <div class="filter-row reveal" role="group" aria-label="Filtrer les projets">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">Tous <span>07</span></button>
+          <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">IA <span>01</span></button>
+          <button class="filter-btn" type="button" data-filter="iot" aria-pressed="false">IoT <span>03</span></button>
+          <button class="filter-btn" type="button" data-filter="robotics" aria-pressed="false">Robotique <span>02</span></button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web &amp; Mobile <span>04</span></button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- SkinCheck -->
+          <article class="project-card reveal" data-category="ai web">
+            <div class="project-art" >
+              <span class="project-index">01</span>
+              <img class="project-img" src="assets/img/projects/skincheck.svg" alt="Diagnostic cutané assisté par intelligence artificielle" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+              
+              
+              <span class="art-glow"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag-cat">IA · Mobile</span>
+                <span class="tag-featured"> Projet phare</span>
+              </div>
+              <h3>SkinCheck</h3>
+              <p>Application mobile de diagnostic cutané assistée par IA, basée sur un réseau de neurones convolutif.</p>
+              <div class="project-tags">
+                <span>Python</span><span>TensorFlow</span><span>CNN</span><span>Java</span><span>XML</span>
+              </div>
+              <button class="project-link" type="button" data-project="skincheck">
+                Voir le détail
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- LEONI -->
+          <article class="project-card reveal" data-category="iot web" style="--d:.06s">
+            <div class="project-art" >
+              <span class="project-index">02</span>
+              <img class="project-img" src="assets/img/projects/leoni-iot.svg" alt="Supervision IoT en temps réel" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+              
+              <span class="art-glow"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag-cat">IoT · Mobile</span>
+                <span class="tag-featured"> Stage</span>
+              </div>
+              <h3>IoT Monitor — LEONI</h3>
+              <p>Application mobile de supervision d'appareils IoT en temps réel via MQTT, avec assistant virtuel intégré.</p>
+              <div class="project-tags">
+                <span>ESP32</span><span>MQTT</span><span>React Native</span><span>Firebase</span><span>Groq</span>
+              </div>
+              <button class="project-link" type="button" data-project="leoni">
+                Voir le détail
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Robotino -->
+          <article class="project-card reveal" data-category="robotics">
+            <div class="project-art" >
+              <span class="project-index">03</span>
+              <img class="project-img" src="assets/img/projects/robotino.jpg" alt="Robot mobile autonome" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+              
+              
+              <span class="art-glow"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag-cat">Robotique</span>
+              </div>
+              <h3>Robotino — Navigation autonome</h3>
+              <p>Intégration et exploitation du robot mobile Festo Robotino : perception, simulation et contrôle sous ROS2.</p>
+              <div class="project-tags">
+                <span>ROS2</span><span>Gazebo</span><span>Python</span>
+              </div>
+              <button class="project-link" type="button" data-project="robotino">
+                Voir le détail
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Niryo -->
+          <article class="project-card reveal" data-category="robotics" style="--d:.06s">
+            <div class="project-art" >
+              <span class="project-index">04</span>
+              <img class="project-img" src="assets/img/projects/niryo.jpg" alt="Bras robotisé à commande gestuelle" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+              
+             
+              <span class="art-glow"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag-cat">Robotique</span>
+              </div>
+              <h3>Bras Niryo — Commande gestuelle</h3>
+              <p>Commande d'un bras robotisé Niryo par les gestes de la main, avec jumeau numérique sous Gazebo.</p>
+              <div class="project-tags">
+                <span>ROS2</span><span>Gazebo</span><span>Python</span>
+              </div>
+              <button class="project-link" type="button" data-project="niryo">
+                Voir le détail
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Véhicules électriques -->
+          <article class="project-card reveal" data-category="iot">
+            <div class="project-art" >
+              <span class="project-index">05</span>
+              <img class="project-img" src="assets/img/projects/ev-monitoring.svg" alt="Monitoring de véhicule électrique" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+              
+              
+              <span class="art-glow"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag-cat">IoT · Embarqué</span>
+              </div>
+              <h3>Monitoring de véhicules électriques</h3>
+              <p>Tableau de bord temps réel pour véhicules électriques : température, humidité et détection de pluie.</p>
+              <div class="project-tags">
+                <span>Arduino</span><span>DHT22</span><span>PyQt5</span><span>PySerial</span>
+              </div>
+              <button class="project-link" type="button" data-project="ev">
+                Voir le détail
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Châssis -->
+          <article class="project-card reveal" data-category="iot web" style="--d:.06s">
+            <div class="project-art" >
+              <span class="project-index">06</span>
+              <img class="project-img" src="assets/img/projects/chassis.svg" alt="Châssis intelligent et électronique embarquée" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+              
+              
+              <span class="art-glow"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag-cat">IoT · Mobile</span>
+              </div>
+              <h3>Châssis intelligent</h3>
+              <p>Châssis mobile piloté depuis une interface Android, avec firmware embarqué sur microcontrôleur STM32.</p>
+              <div class="project-tags">
+                <span>STM32</span><span>Android Studio</span><span>Java</span>
+              </div>
+              <button class="project-link" type="button" data-project="chassis">
+                Voir le détail
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Anti-fraude -->
+          <article class="project-card is-wide reveal" data-category="web">
+            <div class="project-art" >
+              <span class="project-index">07</span>
+              <img class="project-img" src="assets/img/projects/anti-fraude.svg" alt="Plateforme web de sécurité anti-fraude" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+              
+              
+              <span class="art-glow"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag-cat">Web · Sécurité</span>
+                <span class="tag-featured"> Stage de fin d'études</span>
+              </div>
+              <h3>Application web anti-fraude</h3>
+              <p>Plateforme de détection et de prévention des fraudes, développée pour OXYDEV avec un back-end Symfony et une interface responsive Bootstrap.</p>
+              <div class="project-tags">
+                <span>Symfony</span><span>PHP</span><span>Bootstrap</span><span>MySQL</span>
+              </div>
+              <button class="project-link" type="button" data-project="fraud">
+                Voir le détail
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span>03 — Compétences</span>
+          <h2>Une stack complète, <span class="grad-text">du capteur au cloud</span></h2>
+          <p>Explorez mes domaines d'expertise. Chaque catégorie rassemble les outils que j'utilise pour donner vie à mes projets.</p>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-nav reveal" role="tablist" aria-label="Catégories de compétences" aria-orientation="vertical">
+            <button class="skill-tab active" type="button" role="tab" aria-selected="true" aria-controls="panel-ai" id="tab-ai" data-skill="ai">
+              <span class="tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-brain"></use></svg></span>
+              <span class="tab-text"><strong>IA &amp; Data</strong><small>6 technologies</small></span>
+              <svg class="icon tab-arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-iot" id="tab-iot" data-skill="iot" tabindex="-1">
+              <span class="tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg></span>
+              <span class="tab-text"><strong>IoT &amp; Embarqué</strong><small>6 technologies</small></span>
+              <svg class="icon tab-arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-robotics" id="tab-robotics" data-skill="robotics" tabindex="-1">
+              <span class="tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-bot"></use></svg></span>
+              <span class="tab-text"><strong>Robotique</strong><small>6 technologies</small></span>
+              <svg class="icon tab-arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-web" id="tab-web" data-skill="web" tabindex="-1">
+              <span class="tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span>
+              <span class="tab-text"><strong>Web &amp; Mobile</strong><small>6 technologies</small></span>
+              <svg class="icon tab-arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-languages" id="tab-languages" data-skill="languages" tabindex="-1">
+              <span class="tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"></use></svg></span>
+              <span class="tab-text"><strong>Langages</strong><small>8 langages</small></span>
+              <svg class="icon tab-arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+            <button class="skill-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-networks" id="tab-networks" data-skill="networks" tabindex="-1">
+              <span class="tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg></span>
+              <span class="tab-text"><strong>Réseaux &amp; Cloud</strong><small>5 technologies</small></span>
+              <svg class="icon tab-arrow" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+          </div>
+
+          <div class="skills-panels reveal" style="--d:.08s">
+            <!-- IA -->
+            <div class="glass skills-panel active" id="panel-ai" role="tabpanel" aria-labelledby="tab-ai" data-panel="ai">
+              <div class="panel-head">
+                <span class="panel-icon"><svg class="icon" aria-hidden="true"><use href="#i-brain"></use></svg></span>
+                <div>
+                  <h3>Intelligence artificielle &amp; Data</h3>
+                  <p>Donner du sens aux données et concevoir des modèles capables de décider.</p>
+                </div>
+              </div>
+              <div class="skill-list">
+                <div class="skill-row"><div class="skill-top"><span>Python</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:90%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>TensorFlow / Keras</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:84%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>API Groq / LLM</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:82%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>CNN &amp; Vision par ordinateur</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:78%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Machine Learning</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:74%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>PyQt5</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:72%"></span></div></div>
+              </div>
+              <div class="panel-tags">
+                <span>Deep Learning</span><span>Computer Vision</span><span>Data</span><span>Prototypage</span>
+              </div>
+            </div>
+
+            <!-- IoT -->
+            <div class="glass skills-panel" id="panel-iot" role="tabpanel" aria-labelledby="tab-iot" data-panel="iot" hidden>
+              <div class="panel-head">
+                <span class="panel-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg></span>
+                <div>
+                  <h3>IoT &amp; Systèmes embarqués</h3>
+                  <p>Connecter le monde physique : capteurs, microcontrôleurs et protocoles.</p>
+                </div>
+              </div>
+              <div class="skill-list">
+                <div class="skill-row"><div class="skill-top"><span>Arduino</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:92%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>ESP32</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:90%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>MQTT</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:90%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>STM32</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:80%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Modbus / Profibus</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:80%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Raspberry Pi</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:75%"></span></div></div>
+              </div>
+              <div class="panel-tags">
+                <span>Capteurs</span><span>HTTP</span><span>Proteus</span><span>Temps réel</span>
+              </div>
+            </div>
+
+            <!-- Robotique -->
+            <div class="glass skills-panel" id="panel-robotics" role="tabpanel" aria-labelledby="tab-robotics" data-panel="robotics" hidden>
+              <div class="panel-head">
+                <span class="panel-icon"><svg class="icon" aria-hidden="true"><use href="#i-bot"></use></svg></span>
+                <div>
+                  <h3>Robotique &amp; Simulation</h3>
+                  <p>Simuler, programmer et faire bouger des systèmes autonomes.</p>
+                </div>
+              </div>
+              <div class="skill-list">
+                <div class="skill-row"><div class="skill-top"><span>ROS2</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:86%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Gazebo</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:82%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Robotino / Niryo</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:80%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Matlab</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:74%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>TIA Portal</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:70%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>LabVIEW</span><span class="skill-level">Intermédiaire</span></div><div class="skill-bar"><span style="--w:66%"></span></div></div>
+              </div>
+              <div class="panel-tags">
+                <span>Navigation</span><span>Cartographie</span><span>Contrôle</span><span>Simulation</span>
+              </div>
+            </div>
+
+            <!-- Web -->
+            <div class="glass skills-panel" id="panel-web" role="tabpanel" aria-labelledby="tab-web" data-panel="web" hidden>
+              <div class="panel-head">
+                <span class="panel-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span>
+                <div>
+                  <h3>Web &amp; Mobile</h3>
+                  <p>Créer des interfaces claires pour piloter et visualiser les systèmes.</p>
+                </div>
+              </div>
+              <div class="skill-list">
+                <div class="skill-row"><div class="skill-top"><span>Bootstrap</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:95%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>React Native</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:92%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Firebase</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:85%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Symfony</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:78%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Laravel</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:76%"></span></div></div>
+              </div>
+              <div class="panel-tags">
+                <span>Android Studio</span><span>XML</span><span>i18next</span><span>Responsive</span>
+              </div>
+            </div>
+
+            <!-- Langages -->
+            <div class="glass skills-panel" id="panel-languages" role="tabpanel" aria-labelledby="tab-languages" data-panel="languages" hidden>
+              <div class="panel-head">
+                <span class="panel-icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"></use></svg></span>
+                <div>
+                  <h3>Langages de programmation</h3>
+                  <p>Les fondations : écrire un code propre, du firmware à l'application.</p>
+                </div>
+              </div>
+              <div class="skill-list skill-list-compact">
+                <div class="skill-row"><div class="skill-top"><span>Python</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:90%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>JavaScript</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:84%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Java</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:80%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>PHP</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:78%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>C / C++</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:76%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>SQL</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:75%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>SCL / Ladder</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:75%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>VHDL</span><span class="skill-level">Intermédiaire</span></div><div class="skill-bar"><span style="--w:62%"></span></div></div>
+              </div>
+              <div class="panel-tags">
+                <span>POO</span><span>Algorithmique</span><span>Firmware</span><span>Bases de données</span>
+              </div>
+            </div>
+
+            <!-- Réseaux -->
+            <div class="glass skills-panel" id="panel-networks" role="tabpanel" aria-labelledby="tab-networks" data-panel="networks" hidden>
+              <div class="panel-head">
+                <span class="panel-icon"><svg class="icon" aria-hidden="true"><use href="#i-cloud"></use></svg></span>
+                <div>
+                  <h3>Réseaux &amp; Cloud</h3>
+                  <p>Faire circuler la donnée de manière fiable et sécurisée.</p>
+                </div>
+              </div>
+              <div class="skill-list">
+                <div class="skill-row"><div class="skill-top"><span>HTTP / HTTPS</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:86%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Packet Tracer</span><span class="skill-level">Avancé</span></div><div class="skill-bar"><span style="--w:84%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Protocoles industriels</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:82%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>CCNA</span><span class="skill-level">Confirmé</span></div><div class="skill-bar"><span style="--w:79%"></span></div></div>
+                <div class="skill-row"><div class="skill-top"><span>Cloud</span><span class="skill-level">Intermédiaire</span></div><div class="skill-bar"><span style="--w:70%"></span></div></div>
+              </div>
+              <div class="panel-tags">
+                <span>TCP/IP</span><span>IoT</span><span>Sécurité</span><span>MQTT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPÉRIENCE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span>04 — Expérience</span>
+          <h2>Des stages, <span class="grad-text">des terrains d'apprentissage</span></h2>
+          <p>Trois expériences en entreprise qui m'ont appris à livrer des solutions utiles, de l'idée à la mise en production.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date">Juin 2026</span>
+            <div class="glass timeline-card">
+              <div class="timeline-head">
+                <span class="company-logo">L</span>
+                <div class="timeline-title">
+                  <h3>Stage d'été — IoT &amp; Mobile</h3>
+                  <p>LEONI · Sousse, Tunisie</p>
+                </div>
+                <span class="timeline-badge">Stage</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Mise en place d'un environnement IoT basé sur ESP32 avec implémentation du protocole MQTT.</li>
+                <li>Développement d'une application mobile en React Native, interface bilingue FR/EN gérée via i18next.</li>
+                <li>Intégration d'un assistant virtuel intelligent via l'API Groq.</li>
+                <li>Intégration de Firebase Authentication et Realtime Database / Firestore.</li>
+              </ul>
+              <div class="project-tags">
+                <span>ESP32</span><span>MQTT</span><span>React Native</span><span>Firebase</span><span>Groq</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date">Fév. — Mai 2024</span>
+            <div class="glass timeline-card">
+              <div class="timeline-head">
+                <span class="company-logo company-logo-alt">O</span>
+                <div class="timeline-title">
+                  <h3>Stage de fin d'études — Développement web</h3>
+                  <p>OXYDEV · Mahdia, Tunisie</p>
+                </div>
+                <span class="timeline-badge">PFE</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Conception et développement d'une application web de détection et de prévention des fraudes.</li>
+                <li>Développement du back-end avec Symfony (PHP).</li>
+                <li>Création d'une interface responsive et ergonomique avec Bootstrap.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Symfony</span><span>PHP</span><span>Bootstrap</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-date">Juil. — Août 2023</span>
+            <div class="glass timeline-card">
+              <div class="timeline-head">
+                <span class="company-logo company-logo-warm">M</span>
+                <div class="timeline-title">
+                  <h3>Stage d'été — Développement web</h3>
+                  <p>Maklada · El Jem, Tunisie</p>
+                </div>
+                <span class="timeline-badge">Stage</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Développement d'une application web de gestion des équipements informatiques.</li>
+                <li>Interface responsive en HTML, CSS et JavaScript.</li>
+                <li>Développement du back-end avec Laravel.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Laravel</span><span>PHP</span><span>JavaScript</span><span>HTML/CSS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMATION ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span>05 — Formation</span>
+          <h2>Un parcours <span class="grad-text">à double compétence</span></h2>
+          <p>De l'analyse de données à l'ingénierie robotique, en passant par l'IA et l'IoT.</p>
+        </div>
+
+        <div class="edu-grid">
+          <article class="glass edu-card reveal">
+            <div class="edu-top">
+              <span class="edu-icon"><svg class="icon" aria-hidden="true"><use href="#i-graduation"></use></svg></span>
+              <span class="badge-now">En cours</span>
+            </div>
+            <h3>Cycle d'ingénieur en Génie Informatique Industrielle</h3>
+            <p class="edu-school">Enet'Com Sfax</p>
+            <p class="edu-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg> Depuis sept. 2025</p>
+            <p class="edu-desc">Spécialisation robotique et contrôle industriel : automatisation, systèmes embarqués et projets d'intégration.</p>
+            <div class="project-tags"><span>Robotique</span><span>Contrôle</span><span>Systèmes embarqués</span></div>
+          </article>
+
+          <article class="glass edu-card reveal" style="--d:.08s">
+            <div class="edu-top">
+              <span class="edu-icon edu-icon-cyan"><svg class="icon" aria-hidden="true"><use href="#i-brain"></use></svg></span>
+              <span class="badge-done">Diplômée</span>
+            </div>
+            <h3>Mastère professionnel en IA &amp; IoT</h3>
+            <p class="edu-school">ISSAT Mahdia</p>
+            <p class="edu-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg> Sept. 2024 — Mai 2025</p>
+            <p class="edu-desc">Double compétence en intelligence artificielle et objets connectés : apprentissage automatique, vision et cloud.</p>
+            <div class="project-tags"><span>IA</span><span>IoT</span><span>Machine Learning</span></div>
+          </article>
+
+          <article class="glass edu-card reveal" style="--d:.16s">
+            <div class="edu-top">
+              <span class="edu-icon edu-icon-pink"><svg class="icon" aria-hidden="true"><use href="#i-database"></use></svg></span>
+              <span class="badge-done">Diplômée</span>
+            </div>
+            <h3>Licence en TIC — Traitement &amp; analyse des données</h3>
+            <p class="edu-school">ISSAT Mahdia</p>
+            <p class="edu-date"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg> Sept. 2021 — Mai 2024</p>
+            <p class="edu-desc">Fondamentaux des systèmes d'information : bases de données, algorithmique, réseaux et développement.</p>
+            <div class="project-tags"><span>Data</span><span>SQL</span><span>Réseaux</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS & LANGUES ===== -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span>06 — Certifications &amp; Langues</span>
+          <h2>Apprendre <span class="grad-text">en continu</span></h2>
+          <p>Des certifications techniques, une vie associative active et trois langues pour travailler sans frontières.</p>
+        </div>
+
+        <div class="cert-layout">
+          <div class="cert-cards">
+            <article class="glass cert-card reveal">
+              <span class="cert-icon"><svg class="icon" aria-hidden="true"><use href="#i-award"></use></svg></span>
+              <div class="cert-info">
+                <span class="cert-kicker">Certificat</span>
+                <h3>Formation Arduino</h3>
+                <p>Programmation de microcontrôleurs, capteurs et actionneurs.</p>
+              </div>
+              <span class="cert-check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+            </article>
+
+            <article class="glass cert-card reveal" style="--d:.06s">
+              <span class="cert-icon cert-icon-cyan"><svg class="icon" aria-hidden="true"><use href="#i-wifi"></use></svg></span>
+              <div class="cert-info">
+                <span class="cert-kicker">Cisco Networking Academy</span>
+                <h3>CCNA 1</h3>
+                <p>Fondamentaux des réseaux : adressage IP, routage et commutation.</p>
+              </div>
+              <span class="cert-check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+            </article>
+
+            <article class="glass cert-card reveal" style="--d:.12s">
+              <span class="cert-icon cert-icon-pink"><svg class="icon" aria-hidden="true"><use href="#i-bot"></use></svg></span>
+              <div class="cert-info">
+                <span class="cert-kicker">Engagement</span>
+                <h3>Club Robotique — ISSAT Mahdia</h3>
+                <p>Conception de projets Arduino &amp; IoT et participation à des hackathons de robotique.</p>
+              </div>
+              <span class="cert-check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+            </article>
+          </div>
+
+          <aside class="glass languages-card reveal" style="--d:.1s">
+            <div class="languages-head">
+              <span class="mini-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg></span>
+              <div>
+                <h3>Langues</h3>
+                <p>Communication professionnelle</p>
+              </div>
+            </div>
+
+            <div class="lang-row">
+              <div class="ring" style="--p:100"><span>100%</span></div>
+              <div class="lang-info"><strong>Arabe</strong><span>Langue maternelle</span></div>
+              <span class="lang-level">Natif</span>
+            </div>
+            <div class="lang-row">
+              <div class="ring" style="--p:62"><span>B1</span></div>
+              <div class="lang-info"><strong>Français</strong><span>Intermédiaire</span></div>
+              <span class="lang-level">B1</span>
+            </div>
+            <div class="lang-row">
+              <div class="ring" style="--p:78"><span>B2</span></div>
+              <div class="lang-info"><strong>Anglais</strong><span>Intermédiaire avancé</span></div>
+              <span class="lang-level">B2</span>
+            </div>
+
+            <div class="languages-note">
+              <svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg>
+              À l'aise dans les équipes pluridisciplinaires et multiculturelles.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <span class="eyebrow"><span class="eyebrow-line"></span>07 — Contact</span>
+            <h2>Donnons vie à <span class="grad-text">votre prochain projet</span></h2>
+            <p>Une idée, un stage, un projet en IoT, IA ou robotique ? Je serais ravie d'échanger et de contribuer à votre équipe.</p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></span>
+                <div class="contact-value">
+                  <small>Email</small>
+                  <a href="mailto:malek.ch101@gmail.com">malek.ch101@gmail.com</a>
+                </div>
+                <button class="copy-btn" type="button" data-copy="malek.ch101@gmail.com" aria-label="Copier l'adresse email" title="Copier l'email">
+                  <svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg>
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg></span>
+                <div class="contact-value">
+                  <small>Téléphone</small>
+                  <a href="tel:+21627728351">+216 27 728 351</a>
+                </div>
+                <button class="copy-btn" type="button" data-copy="+21627728351" aria-label="Copier le numéro de téléphone" title="Copier le numéro">
+                  <svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg>
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"></use></svg></span>
+                <div class="contact-value">
+                  <small>Localisation</small>
+                  <span>El Jem, Tunisie</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/malek-chebbi-77b60237b/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Profil LinkedIn">
+                <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+              </a>
+              <a href="mailto:malek.ch101@gmail.com" class="social-link" aria-label="Envoyer un email">
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+              </a>
+              <a href="assets/docs/CV_Malek_Chebbi.pdf" download class="social-link" aria-label="Télécharger le CV">
+                <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-head">
+              <h3>Envoyer un message</h3>
+              <p>Réponse sous 24 h en général.</p>
+            </div>
+
+            <div class="field">
+              <label for="name">Votre nom et prénom</label>
+              <input id="name" name="name" type="text" placeholder="Ex. Nom Prénom" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Votre email</label>
+              <input id="email" name="email" type="email" placeholder="vous@entreprise.com" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="subject">Sujet</label>
+              <input id="subject" name="subject" type="text" placeholder="Opportunité de stage, collaboration…">
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Parlez-moi de votre projet…" required></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="#i-send"></use></svg>
+              Envoyer le message
+            </button>
+            <p class="form-note">Ce formulaire ouvre votre client mail avec le message prérempli.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="brand" aria-label="Malek Chebbi — retour en haut">
+          <span class="brand-mark">MC</span>
+          <span class="brand-text">Malek<span>Chebbi</span></span>
+        </a>
+        <p>Ingénieure en Génie Informatique Industrielle.<br>IoT · IA · Robotique · Web &amp; Mobile.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Liens de navigation du pied de page">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#experience">Expérience</a>
+        <a href="#education">Formation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-cta">
+        <a href="mailto:malek.ch101@gmail.com" class="btn btn-ghost btn-sm">
+          <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+          Discutons ensemble
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Malek Chebbi. Tous droits réservés.</p>
+      <p>Conçu avec <span class="heart">♥</span> </p>
+    </div>
+  </footer>
+
+  <!-- ===== Bouton retour en haut ===== -->
+  <button class="to-top" id="toTop" type="button" aria-label="Retour en haut">
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"></use></svg>
+  </button>
+
+  <!-- ===== Modale projet ===== -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Fermer la fiche projet">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+
+      <div class="modal-art" id="modalArt">
+        <img id="modalImg" class="modal-img" src="" alt="" loading="lazy" decoding="async" onerror="this.classList.add('is-error')">
+        <span class="modal-art-index" id="modalIndex">01</span>
+        <svg class="modal-icon" id="modalIcon" aria-hidden="true"><use href="#i-heart-pulse"></use></svg>
+      </div>
+
+      <div class="modal-content">
+        <div class="project-meta">
+          <span class="tag-cat" id="modalCategory">IA · Mobile</span>
+          <span class="tag-featured" id="modalContext">Projet académique</span>
+        </div>
+        <h3 id="modalTitle">SkinCheck</h3>
+        <p class="modal-desc" id="modalDesc"></p>
+
+        <div class="modal-section">
+          <h4>Points clés</h4>
+          <ul class="modal-list" id="modalHighlights"></ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>Stack technique</h4>
+          <div class="project-tags" id="modalStack"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>
+    <span id="toastText">Email copié !</span>
+  </div>
+
+  <!-- ===== Sprite d'icônes SVG ===== -->
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+    <symbol id="i-graduation" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-heart-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-4 0v5"/><path d="M14 10V4a2 2 0 0 0-4 0v2"/><path d="M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+  </svg>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

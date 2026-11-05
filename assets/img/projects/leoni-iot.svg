@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse"><stop stop-color="#071426"/><stop offset="1" stop-color="#081a2f"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#4f7cff"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="230" cy="480" r="180" fill="#22d3ee" opacity=".16" filter="url(#g)"/>
+  <circle cx="980" cy="170" r="210" fill="#4f7cff" opacity=".18" filter="url(#g)"/>
+  <!-- network lines -->
+  <g stroke="#2e4f8f" stroke-width="2" opacity=".7">
+    <path d="M260 315h210M470 315l170-120M470 315l170 120M640 195h190M640 435h190M830 195l140 120M830 435l140-120"/>
+  </g>
+  <!-- ESP32 board -->
+  <rect x="150" y="230" width="220" height="170" rx="16" fill="#0b1830" stroke="url(#a)" stroke-width="2.5"/>
+  <rect x="178" y="258" width="74" height="44" rx="6" fill="#16284d" stroke="#355aa8"/>
+  <text x="192" y="285" fill="#9fc5ff" font-size="16" font-family="Arial,sans-serif" font-weight="700">ESP32</text>
+  <g fill="#22d3ee"><circle cx="300" cy="272" r="4"/><circle cx="320" cy="272" r="4"/><circle cx="340" cy="272" r="4"/></g>
+  <g stroke="#5f86d6" stroke-width="3" stroke-linecap="round"><path d="M185 330h150M185 355h120M185 380h90"/></g>
+  <g fill="#0b1830" stroke="#4f7cff" stroke-width="2">
+    <rect x="150" y="238" width="10" height="18" rx="2"/><rect x="150" y="268" width="10" height="18" rx="2"/><rect x="150" y="298" width="10" height="18" rx="2"/><rect x="150" y="328" width="10" height="18" rx="2"/>
+    <rect x="360" y="238" width="10" height="18" rx="2"/><rect x="360" y="268" width="10" height="18" rx="2"/><rect x="360" y="298" width="10" height="18" rx="2"/><rect x="360" y="328" width="10" height="18" rx="2"/>
+  </g>
+  <!-- wifi -->
+  <g transform="translate(430 240)" stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M0 50a70 70 0 0 1 100 0" opacity=".35"/><path d="M15 35a50 50 0 0 1 70 0" opacity=".6"/><path d="M30 20a30 30 0 0 1 40 0" opacity=".85"/><circle cx="50" cy="58" r="4" fill="#22d3ee" stroke="none"/>
+  </g>
+  <rect x="552" y="282" width="86" height="34" rx="17" fill="#102544" stroke="#22d3ee"/>
+  <text x="572" y="304" fill="#22d3ee" font-size="15" font-family="Arial,sans-serif" font-weight="700">MQTT</text>
+  <!-- phone app -->
+  <rect x="690" y="110" width="170" height="290" rx="26" fill="#0b1022" stroke="#4f7cff" stroke-width="2.5"/>
+  <rect x="708" y="145" width="134" height="215" rx="12" fill="#11183a"/>
+  <rect x="722" y="162" width="106" height="34" rx="8" fill="#1b2557"/>
+  <rect x="722" y="206" width="106" height="34" rx="8" fill="#15204a"/>
+  <rect x="722" y="250" width="106" height="34" rx="8" fill="#15204a"/>
+  <circle cx="742" cy="179" r="7" fill="#34d399"/><rect x="758" y="174" width="58" height="10" rx="5" fill="#7f93d8"/>
+  <rect x="740" y="315" width="70" height="24" rx="12" fill="url(#a)"/>
+  <text x="753" y="331" fill="#fff" font-size="11" font-family="Arial,sans-serif" font-weight="700">Assistant</text>
+  <!-- cloud -->
+  <path d="M955 300c0-24 19-43 43-43 5 0 10 1 15 3 11-26 37-44 67-44 40 0 73 33 73 73v1c24 2 43 22 43 47 0 26-21 47-47 47H1005c-28 0-50-22-50-50 0-12 4-23 11-32-7-1-11-2-11-2z" fill="#0f1d3d" stroke="#4f7cff" stroke-width="2.5"/>
+  <text x="1032" y="322" fill="#cfe1ff" font-size="18" font-family="Arial,sans-serif" font-weight="700">Firebase</text>
+  <rect x="690" y="440" width="430" height="78" rx="16" fill="#0d1833" stroke="#28457f"/>
+  <g fill="#34d399"><circle cx="730" cy="479" r="6"/><circle cx="880" cy="479" r="6"/><circle cx="1030" cy="479" r="6"/></g>
+  <text x="748" y="484" fill="#c7cae4" font-size="16" font-family="Arial,sans-serif">Auth</text>
+  <text x="898" y="484" fill="#c7cae4" font-size="16" font-family="Arial,sans-serif">Realtime</text>
+  <text x="1048" y="484" fill="#c7cae4" font-size="16" font-family="Arial,sans-serif">Groq</text>
+  <text x="120" y="560" fill="#eef0ff" font-size="42" font-family="Arial,sans-serif" font-weight="700">IoT Monitor — LEONI</text>
+  <text x="120" y="595" fill="#969cbd" font-size="22" font-family="Arial,sans-serif">ESP32 · MQTT · React Native · Firebase</text>
+</svg>

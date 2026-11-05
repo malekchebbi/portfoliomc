@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse"><stop stop-color="#071f1d"/><stop offset="1" stop-color="#081a29"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#34d399"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="280" cy="190" r="190" fill="#34d399" opacity=".15" filter="url(#g)"/>
+  <circle cx="960" cy="420" r="220" fill="#22d3ee" opacity=".13" filter="url(#g)"/>
+  <!-- dashboard -->
+  <rect x="560" y="120" width="500" height="310" rx="24" fill="#0b1522" stroke="#2a6070" stroke-width="2.5"/>
+  <rect x="590" y="155" width="440" height="170" rx="14" fill="#08101b" stroke="#1e4757"/>
+  <!-- chart -->
+  <path d="M620 290h380" stroke="#234b60" stroke-width="2"/>
+  <path d="M620 295l55-35 55 18 55-45 55 30 55-55 55 22 50-40" stroke="url(#a)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#22d3ee"><circle cx="675" cy="260" r="5"/><circle cx="785" cy="228" r="5"/><circle cx="895" cy="203" r="5"/><circle cx="1005" cy="180" r="5"/></g>
+  <!-- gauges/cards -->
+  <rect x="590" y="345" width="134" height="62" rx="12" fill="#102231"/>
+  <text x="610" y="372" fill="#8fb6c7" font-size="13" font-family="Arial,sans-serif">Température</text>
+  <text x="610" y="397" fill="#34d399" font-size="24" font-family="Arial,sans-serif" font-weight="700">24°C</text>
+  <rect x="736" y="345" width="134" height="62" rx="12" fill="#102231"/>
+  <text x="756" y="372" fill="#8fb6c7" font-size="13" font-family="Arial,sans-serif">Humidité</text>
+  <text x="756" y="397" fill="#22d3ee" font-size="24" font-family="Arial,sans-serif" font-weight="700">58%</text>
+  <rect x="882" y="345" width="148" height="62" rx="12" fill="#102231"/>
+  <text x="902" y="372" fill="#8fb6c7" font-size="13" font-family="Arial,sans-serif">Pluie</text>
+  <text x="902" y="397" fill="#eef0ff" font-size="20" font-family="Arial,sans-serif" font-weight="700">Détectée</text>
+  <!-- EV car -->
+  <g transform="translate(150 260)">
+    <ellipse cx="190" cy="165" rx="190" ry="22" fill="#050812" opacity=".35"/>
+    <path d="M40 120c8-30 24-58 55-62h150c22 0 46 18 68 42l42 20c14 4 25 16 25 30v18c0 10-8 18-18 18h-20a34 34 0 0 1-68 0H106a34 34 0 0 1-68 0H18c-8 0-14-6-14-14v-20c0-18 14-28 36-32z" fill="#122333" stroke="url(#a)" stroke-width="3"/>
+    <path d="M110 58h120l42 42H82z" fill="#0b1724" stroke="#3c8f8f" stroke-width="2"/>
+    <line x1="170" y1="58" x2="158" y2="100" stroke="#3c8f8f" stroke-width="2"/>
+    <circle cx="72" cy="186" r="26" fill="#08101b" stroke="#34d399" stroke-width="3"/>
+    <circle cx="308" cy="186" r="26" fill="#08101b" stroke="#34d399" stroke-width="3"/>
+    <circle cx="72" cy="186" r="8" fill="#22d3ee"/><circle cx="308" cy="186" r="8" fill="#22d3ee"/>
+    <rect x="356" y="104" width="10" height="18" rx="3" fill="#22d3ee" opacity=".8"/>
+  </g>
+  <!-- sensors -->
+  <g stroke="#22d3ee" stroke-width="2" fill="#0b1522">
+    <rect x="160" y="170" width="90" height="54" rx="12"/><rect x="265" y="170" width="90" height="54" rx="12"/><rect x="370" y="170" width="90" height="54" rx="12"/>
+  </g>
+  <text x="180" y="202" fill="#c7cae4" font-size="14" font-family="Arial,sans-serif">DHT22</text>
+  <text x="280" y="202" fill="#c7cae4" font-size="14" font-family="Arial,sans-serif">Arduino</text>
+  <text x="393" y="202" fill="#c7cae4" font-size="14" font-family="Arial,sans-serif">Pluie</text>
+  <text x="120" y="560" fill="#eef0ff" font-size="42" font-family="Arial,sans-serif" font-weight="700">Monitoring Véhicules Électriques</text>
+  <text x="120" y="595" fill="#969cbd" font-size="22" font-family="Arial,sans-serif">Capteurs · Arduino · PyQt5 · Temps réel</text>
+</svg>

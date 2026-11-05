@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse"><stop stop-color="#120f2b"/><stop offset="1" stop-color="#0a1630"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="280" cy="210" r="180" fill="#8b5cf6" opacity=".18" filter="url(#g)"/>
+  <circle cx="920" cy="470" r="220" fill="#22d3ee" opacity=".14" filter="url(#g)"/>
+  <!-- floor grid -->
+  <g stroke="#243158" stroke-width="1.2" opacity=".55">
+    <path d="M120 470l360-150 600 70-360 160z"/>
+    <path d="M220 428l320-133M320 470l320-133M420 512l320-133M520 554l320-133M240 420l90 50M360 370l90 50M480 320l90 50M600 270l90 50M330 470l90 50M450 420l90 50M570 370l90 50M690 320l90 50"/>
+  </g>
+  <!-- path -->
+  <path d="M260 430c90-30 150-110 280-130s240 40 350 10" stroke="url(#a)" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14" opacity=".9"/>
+  <circle cx="260" cy="430" r="8" fill="#22d3ee"/><circle cx="890" cy="310" r="8" fill="#8b5cf6"/>
+  <!-- robot body -->
+  <ellipse cx="560" cy="375" rx="26" ry="10" fill="#050812" opacity=".45"/>
+  <circle cx="560" cy="285" r="105" fill="#121935" stroke="#5161a8" stroke-width="3"/>
+  <circle cx="560" cy="285" r="78" fill="#0c1126" stroke="url(#a)" stroke-width="3"/>
+  <circle cx="560" cy="285" r="18" fill="#22d3ee" opacity=".9"/>
+  <g fill="#1a244d" stroke="#6f82d0" stroke-width="2">
+    <rect x="448" y="255" width="34" height="60" rx="10"/><rect x="638" y="255" width="34" height="60" rx="10"/>
+    <rect x="530" y="168" width="60" height="34" rx="10"/>
+  </g>
+  <circle cx="465" cy="285" r="9" fill="#22d3ee"/><circle cx="655" cy="285" r="9" fill="#22d3ee"/><circle cx="560" cy="185" r="9" fill="#8b5cf6"/>
+  <!-- lidar arcs -->
+  <g stroke="#22d3ee" fill="none" stroke-linecap="round">
+    <path d="M560 285l-120-95" opacity=".25" stroke-width="2"/>
+    <path d="M500 210a150 150 0 0 1 120 0" stroke-width="2.5" opacity=".5"/>
+    <path d="M470 185a200 200 0 0 1 180 0" stroke-width="2" opacity=".3"/>
+  </g>
+  <!-- Gazebo / ROS panel -->
+  <rect x="810" y="150" width="250" height="160" rx="18" fill="#0d142d" stroke="#364a86" stroke-width="2"/>
+  <rect x="832" y="178" width="206" height="84" rx="10" fill="#0a1024" stroke="#23315f"/>
+  <path d="M850 240l30-30 35 18 45-35 40 22 30-20" stroke="url(#a)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="832" y="274" width="92" height="24" rx="12" fill="#18265a"/>
+  <text x="852" y="291" fill="#cfe1ff" font-size="12" font-family="Arial,sans-serif" font-weight="700">ROS2</text>
+  <rect x="934" y="274" width="92" height="24" rx="12" fill="#18265a"/>
+  <text x="952" y="291" fill="#cfe1ff" font-size="12" font-family="Arial,sans-serif" font-weight="700">Gazebo</text>
+  <text x="120" y="560" fill="#eef0ff" font-size="42" font-family="Arial,sans-serif" font-weight="700">Robotino — Navigation</text>
+  <text x="120" y="595" fill="#969cbd" font-size="22" font-family="Arial,sans-serif">Robot mobile · ROS2 · Simulation</text>
+</svg>
